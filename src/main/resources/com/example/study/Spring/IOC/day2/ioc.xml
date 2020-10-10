@@ -164,6 +164,6 @@
         如果需要干扰创建的顺序，可以使用depends-on属性
     一般在实际工作中不必在意bean创建的顺序，无论谁先创建，需要依赖的对象在创建完成之后都会进行赋值操作
     -->
-    <bean id="address" class="com.example.study.IOC.day2.bean.Address" depends-on="person"></bean>
-    <bean id="person" class="com.example.study.IOC.day2.bean.Person"></bean>
+    <bean id="address" class="com.example.study.Spring.IOC.day2.bean.Address" depends-on="person"></bean>
+    <bean id="person" class="com.example.study.Spring.IOC.day2.bean.Person"></bean>
 </beans>
