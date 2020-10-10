@@ -1,4 +1,4 @@
-package com.example.study.IOC.day2.bean;
+package com.example.study.Spring.IOC.day2.bean;
 
 public class Address {
     private String province;

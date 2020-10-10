@@ -1,4 +1,4 @@
-package com.example.study.IOC.why_ioc.dao;
+package com.example.study.Spring.IOC.day1.why_ioc.dao;
 
 public interface UserDao {
 

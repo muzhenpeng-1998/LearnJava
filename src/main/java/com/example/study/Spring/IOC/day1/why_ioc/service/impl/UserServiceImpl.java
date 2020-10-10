@@ -1,7 +1,7 @@
-package com.example.study.IOC.why_ioc.service.impl;
+package com.example.study.Spring.IOC.day1.why_ioc.service.impl;
 
-import com.example.study.IOC.why_ioc.dao.UserDao;
-import com.example.study.IOC.why_ioc.service.UserService;
+import com.example.study.Spring.IOC.day1.why_ioc.dao.UserDao;
+import com.example.study.Spring.IOC.day1.why_ioc.service.UserService;
 
 public class UserServiceImpl implements UserService {
 

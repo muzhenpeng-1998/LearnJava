@@ -1,8 +1,8 @@
-package com.example.study.IOC.why_ioc.test;
+package com.example.study.Spring.IOC.day1.why_ioc.test;
 
-import com.example.study.IOC.why_ioc.dao.impl.UserDaoMysqlImpl;
-import com.example.study.IOC.why_ioc.dao.impl.UserDaoOracleImpl;
-import com.example.study.IOC.why_ioc.service.impl.UserServiceImpl;
+import com.example.study.Spring.IOC.day1.why_ioc.dao.impl.UserDaoMysqlImpl;
+import com.example.study.Spring.IOC.day1.why_ioc.dao.impl.UserDaoOracleImpl;
+import com.example.study.Spring.IOC.day1.why_ioc.service.impl.UserServiceImpl;
 
 public class MyTest {
     public static void main(String[] args) {

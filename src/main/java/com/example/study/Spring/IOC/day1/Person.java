@@ -1,4 +1,4 @@
-package com.example.study.IOC.day1;
+package com.example.study.Spring.IOC.day1;
 
 /**
  * @author nameM
