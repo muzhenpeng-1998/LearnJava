@@ -14,7 +14,7 @@ public class test {
          *       ClassPathXmlApplicationContext:表示从classpath中读取数据
          *       FileSystemXmlApplicationContext:表示从当前文件系统读取数据
          * * */
-        ApplicationContext context = new ClassPathXmlApplicationContext("com/example/study/IOC/day1/ioc.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("com/example/study/Spring/IOC/day1/ioc.xml");
         //获取具体的bean实例对象，需要进行强制类型转换
 //        Person person = (Person) context.getBean("person");
         //获取对象的时候不需要强制类型转换
