@@ -1,6 +1,6 @@
 package com.example.study.Spring.IOC.day4.dao;
 
-import com.mashibing.bean.Student;
+import com.example.study.Spring.IOC.day4.bean.Student;
 import org.springframework.stereotype.Repository;
 
 @Repository

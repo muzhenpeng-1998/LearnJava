@@ -1,6 +1,6 @@
 package com.example.study.Spring.IOC.day4.service;
 
-import com.mashibing.dao.PersonDao;
+import com.example.study.Spring.IOC.day4.dao.PersonDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

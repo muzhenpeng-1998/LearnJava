@@ -24,10 +24,10 @@
 
         @Scope注解可以声明当前类是单例还是多例
     -->
-<!--    <bean id="personController" class="com.mashibing.controller.PersonController" ></bean>-->
+    <bean id="personController" class="com.example.study.Spring.IOC.day4.controller.PersonController" ></bean>
 
 
-    <context:component-scan base-package="com.mashibing" >
+    <context:component-scan base-package="com.example.study.Spring.IOC.day4" >
         <!--当定义好注解的扫描路径之后，可以做更细粒度的控制，可以选择扫描哪个注解，也可以选择不扫描哪个注解
         include-filter:表示要包含扫描的注解,一般不会定义此规则，但是如果引入的第三方包中包含注解，此时就需要使用此标签来进行标识。
         exclude-filter:表示要排除扫描的注解，使用较多
@@ -42,10 +42,14 @@
         custom:使用自定义的方式，可以自己定义自己的筛选规则，一般不用
 
         -->
-<!--        <context:exclude-filter type="assignable" expression="com.mashibing.controller.PersonController"/>-->
-<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
-        <context:include-filter type="assignable" expression="com.mashibing.service.PersonService"/>
+<!--
+        <context:exclude-filter type="assignable" expression="com.example.study.Spring.IOC.day4.controller.PersonController"/>
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+-->
+<!--
+        <context:include-filter type="assignable" expression="com.example.study.Spring.IOC.day4.service.PersonService"/>
+-->
     </context:component-scan>
 
-<!--    <bean id="personController" class="com.mashibing.controller.PersonController" autowire=""></bean>-->
+<!--    <bean id="personController" class="com.example.study.Spring.IOC.day4.controller.PersonController" autowire=""></bean>-->
 </beans>

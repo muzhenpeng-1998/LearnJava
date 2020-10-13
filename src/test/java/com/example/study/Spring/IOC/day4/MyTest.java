@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class MyTest {
 
-    ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+    ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/example/study/Spring/IOC/day4/applicationContext.xml");
 
     @Test
     public void test01() {

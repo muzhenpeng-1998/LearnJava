@@ -1,8 +1,8 @@
 package com.example.study.Spring.IOC.day4.controller;
 
-import com.mashibing.dao.PersonDao;
-import com.mashibing.service.PersonService;
-import com.mashibing.service.PersonService2;
+import com.example.study.Spring.IOC.day4.dao.PersonDao;
+import com.example.study.Spring.IOC.day4.service.PersonService;
+import com.example.study.Spring.IOC.day4.service.PersonService2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -31,8 +31,8 @@ public class PersonController {
      * 3、@Resource是按照名称进行装配的，如果名字找不到，那么就使用类型
      *          而@AutoWired是按照类型进行装配，如果类型找不到那么久使用名字进行查找
      */
-    @Resource
-//    @Autowired
+//    @Resource
+    @Autowired
 //    @Qualifier("personService")
     private PersonService personService;
 
@@ -40,9 +40,9 @@ public class PersonController {
         personService.save();
     }
 
-//    @Autowired
-//    public void test(@Qualifier("personDao") PersonDao personDao123) {
-//        System.out.println("test");
-//        personDao123.update();
-//    }
+    @Autowired
+    public void test(@Qualifier("personDao") PersonDao personDao123) {
+        System.out.println("test");
+        personDao123.update();
+    }
 }
