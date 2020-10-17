@@ -6,17 +6,17 @@ import java.util.concurrent.CyclicBarrier;
 public class T07_TestCyclicBarrier {
     public static void main(String[] args) {
         //CyclicBarrier barrier = new CyclicBarrier(20);
-
-        CyclicBarrier barrier = new CyclicBarrier(20, () -> System.out.println("����"));
+        //够20个线程了 才执行操作
+        CyclicBarrier barrier = new CyclicBarrier(20, () -> System.out.println("满人 发车"));
 
         /*CyclicBarrier barrier = new CyclicBarrier(20, new Runnable() {
             @Override
             public void run() {
-                System.out.println("���ˣ�����");
+                System.out.println("满人 发车");
             }
         });*/
 
-        for(int i=0; i<100; i++) {
+        for(int i=0; i<20; i++) {
 
                 new Thread(()->{
                     try {

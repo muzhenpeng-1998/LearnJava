@@ -52,9 +52,9 @@ public class T10_TestReadWriteLock {
         //Runnable writeR = ()->write(lock, new Random().nextInt());
         Runnable writeR = ()->write(writeLock, new Random().nextInt());
 
-        for(int i=0; i<18; i++) new Thread(readR).start();
-        for(int i=0; i<2; i++) new Thread(writeR).start();
 
+        for(int i=0; i<2; i++) new Thread(writeR).start();
+        for(int i=0; i<18; i++) new Thread(readR).start();
 
     }
 }
