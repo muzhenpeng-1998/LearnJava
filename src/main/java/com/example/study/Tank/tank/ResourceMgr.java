@@ -4,6 +4,9 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+/**
+ * @author nameM
+ */
 public class ResourceMgr {
 
     public static BufferedImage goodTankL, goodTankU, goodTankR, goodTankD;

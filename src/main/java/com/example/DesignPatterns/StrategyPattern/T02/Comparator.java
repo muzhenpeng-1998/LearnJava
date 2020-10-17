@@ -1,5 +1,8 @@
 package com.example.DesignPatterns.StrategyPattern.T02;
 
+/**
+ * @author nameM
+ */
 @FunctionalInterface
 public interface Comparator<T> {
 

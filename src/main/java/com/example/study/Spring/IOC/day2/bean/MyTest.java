@@ -16,8 +16,8 @@ public class MyTest {
         /** 根据bean的类型来获取对象
         * 注意：当通过类型进行获取的时候，如果存在两个相同类型对象，将无法完成获取工作
         * */
-        Person bean = context.getBean(Person.class);
-        System.out.println(bean);
+//        Person bean = context.getBean(Person.class);
+//        System.out.println(bean);
 
         /**
          * 当需要从容器中获取对象的时候，最好要保留无参构造方法，因为底层的实现是反射
@@ -28,7 +28,7 @@ public class MyTest {
          *
          */
 
-//        Person person2 = context.getBean("person", Person.class);
+//        Person person2 = context.getBean("person4", Person.class);
 //        System.out.println(person2);
 //
 //        Person person5 = context.getBean("person5", Person.class);
