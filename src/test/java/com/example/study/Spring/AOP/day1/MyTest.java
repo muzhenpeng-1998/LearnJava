@@ -1,11 +1,8 @@
 package com.example.study.Spring.AOP.day1;
 
-import com.example.study.Spring.AOP.day1.myinter.MyInterface;
-import com.example.study.Spring.AOP.day1.myinter.MySubClass;
 import com.example.study.Spring.AOP.day1.proxy.CalculatorProxy;
 import com.example.study.Spring.AOP.day1.service.Calculator;
-import com.example.study.Spring.AOP.day1.service.MyCalculator;
-import com.example.study.Spring.AOP.day1.service.SecondCalculator;
+import com.example.study.Spring.AOP.day1.service.MyCalculator1;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,7 +15,7 @@ public class MyTest {
 //        System.out.println(myCalculator.add(1, 2));
 //        System.out.println(myCalculator.div(1, 1));
 
-        Calculator calculator = (Calculator) CalculatorProxy.getProxy(new MyCalculator());
+        Calculator calculator = (Calculator) CalculatorProxy.getProxy(new MyCalculator1());
         System.out.println(calculator.add(1, 1));
         calculator.sub(1,1);
         calculator.mul(1,1);

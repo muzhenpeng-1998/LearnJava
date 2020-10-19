@@ -1,8 +1,11 @@
-package com.example.study;
+package com;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author nameM
+ */
 @SpringBootApplication
 public class StudyApplication {
 

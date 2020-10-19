@@ -1,13 +1,10 @@
 package com.example.study.Spring.AOP.day1.proxy;
 
 import com.example.study.Spring.AOP.day1.service.Calculator;
-import com.example.study.Spring.AOP.day1.util.LogUtil;
-import sun.rmi.runtime.Log;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
-import java.util.Arrays;
 
 /**
  * 必须要有接口，如果没有接口，不能使用，这种方式是用jdk提供的reflect包下的类
