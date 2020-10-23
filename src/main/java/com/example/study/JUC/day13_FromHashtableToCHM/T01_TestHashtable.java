@@ -3,6 +3,9 @@ package com.example.study.JUC.day13_FromHashtableToCHM;
 import java.util.Hashtable;
 import java.util.UUID;
 
+/**
+ * @author nameM
+ */
 public class T01_TestHashtable {
 
     static Hashtable<UUID, UUID> m = new Hashtable<>();
