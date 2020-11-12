@@ -2,6 +2,9 @@ package com.example.study.JUC.day12_Containers;
 
 import java.util.*;
 
+/**
+ * @author nameM
+ */
 public class T02_CollectionListSetQueue {
     public static void main(String[] args) {
         Collection<Integer> c1 = new ArrayList();
