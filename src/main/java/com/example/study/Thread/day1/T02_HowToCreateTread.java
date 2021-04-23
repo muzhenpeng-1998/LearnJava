@@ -40,14 +40,16 @@ public class T02_HowToCreateTread {
         new MyThread().start();
         //2.new Thread(Runnable).start()
         new Thread(new MyRun()).start();
+
         new Thread(()->{
             System.out.println("Hello lambda!");
         }).start();
 
-        //3.创建线程池
+        //3.实现Callable
         Thread t = new Thread(new FutureTask<String>(new MyCall()));
         t.start();
 
+        //4.创建线程池
         ExecutorService service = Executors.newCachedThreadPool();
         service.execute(()->{
             System.out.println("Hello ThreadPool");
