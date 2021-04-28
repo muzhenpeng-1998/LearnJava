@@ -1,0 +1,9 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+ThreadLocal -> ThreadLocal: getMap(Thread.currentThread())
+ThreadLocal -> ThreadLocalMap: set(Entry extends WeakReference)
+
+@enduml
