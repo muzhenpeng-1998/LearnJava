@@ -21,11 +21,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class T04_ReentrantLock4 {
-		
 	public static void main(String[] args) {
 		Lock lock = new ReentrantLock();
-		
-		
 		Thread t1 = new Thread(()->{
 			try {
 				lock.lock();
@@ -39,7 +36,6 @@ public class T04_ReentrantLock4 {
 			}
 		});
 		t1.start();
-		
 		Thread t2 = new Thread(()->{
 			try {
 				//lock.lock();
@@ -54,13 +50,11 @@ public class T04_ReentrantLock4 {
 			}
 		});
 		t2.start();
-		
 		try {
 			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		t2.interrupt(); //打断线程2的等待
-		
 	}
 }

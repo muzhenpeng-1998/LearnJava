@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+ReentrantLock -> Sync: acquire(1)
+Sync -> AQS: acquire(1)
+AQS --> Sync:tryAcquire(1)
+Sync -> Sync:nonfairTryAquire(1)
+
+@enduml

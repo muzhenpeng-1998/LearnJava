@@ -18,13 +18,11 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class T03_ReentrantLock3 {
 	Lock lock = new ReentrantLock();
-
 	void m1() {
 		try {
 			lock.lock();
 			for (int i = 0; i < 3; i++) {
 				TimeUnit.SECONDS.sleep(1);
-
 				System.out.println(i);
 			}
 		} catch (InterruptedException e) {
@@ -33,7 +31,6 @@ public class T03_ReentrantLock3 {
 			lock.unlock();
 		}
 	}
-
 	/**
 	 * 使用tryLock进行尝试锁定，不管锁定与否，方法都将继续执行
 	 * 可以根据tryLock的返回值来判定是否锁定
@@ -45,9 +42,7 @@ public class T03_ReentrantLock3 {
 		System.out.println("m2 ..." + locked);
 		if(locked) lock.unlock();
 		*/
-		
 		boolean locked = false;
-		
 		try {
 			locked = lock.tryLock(5, TimeUnit.SECONDS);
 			System.out.println("m2 ..." + locked);
@@ -56,9 +51,7 @@ public class T03_ReentrantLock3 {
 		} finally {
 			if(locked) lock.unlock();
 		}
-		
 	}
-
 	public static void main(String[] args) {
 		T03_ReentrantLock3 rl = new T03_ReentrantLock3();
 		new Thread(rl::m1).start();

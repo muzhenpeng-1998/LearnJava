@@ -27,7 +27,7 @@ public class T05_ReentrantLock5 extends Thread {
         for(int i=0; i<100; i++) {
             lock.lock();
             try{
-                System.out.println(Thread.currentThread().getName()+"»ñµÃËø");
+                System.out.println(Thread.currentThread().getName()+"get lock");
             }finally{
                 lock.unlock();
             }
