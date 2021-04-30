@@ -7,8 +7,8 @@ package com.example.study.Thread.day1;
 public class T03_ThreadMethod {
     public static void main(String[] args) {
 //        testSleep();
-        testYield();
-//        testJoin();
+//        testYield();
+        testJoin();
     }
 
     /**

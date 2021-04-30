@@ -18,11 +18,7 @@ public class T01_HelloVolatile {
         System.out.println("m start");
 
         while(running) {
-//            try {
-//                TimeUnit.MILLISECONDS.sleep(10);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
+
         }
         System.out.println("m end!");
     }
@@ -38,7 +34,7 @@ public class T01_HelloVolatile {
             e.printStackTrace();
         }
 
-//        System.out.println("执行中...");
+        System.out.println("执行中...");
         t.running = false;
     }
 
