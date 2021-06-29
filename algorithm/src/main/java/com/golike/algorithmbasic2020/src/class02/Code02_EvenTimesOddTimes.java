@@ -11,6 +11,14 @@ public class Code02_EvenTimesOddTimes {
 		System.out.println(eor);
 	}
 
+	/**
+	 * 假设 arr = [6,6,6,10,4,4,12,12]
+	 * 思路：
+	 * 1。把奇数^出来
+	 * 2。找出最右侧为1的数据
+	 * 3。
+	 * @param arr
+	 */
 	// arr中，有两种数，出现奇数次
 	public static void printOddTimesNum2(int[] arr) {
 		int eor = 0;
@@ -19,10 +27,12 @@ public class Code02_EvenTimesOddTimes {
 		}
 		// a 和 b是两种数
 		// eor != 0
+		// eor = 6 ^ 10
 		// eor最右侧的1，提取出来
 		// eor :     00110010110111000
 		// rightOne :00000000000001000
-		int rightOne = eor & (-eor); // 提取出最右的1
+		int rightOne = eor & (-eor); // 因为最后剩下6^ 10 肯定是有数据的 且不一样的
+		// 提取出最右的1，
 		
 		
 		int onlyOne = 0; // eor'
@@ -33,6 +43,8 @@ public class Code02_EvenTimesOddTimes {
 				onlyOne ^= arr[i];
 			}
 		}
+		// onlyOne 第一个奇数
+		// 与eor 与或运算就能算出第二个
 		System.out.println(onlyOne + " " + (eor ^ onlyOne));
 	}
 
