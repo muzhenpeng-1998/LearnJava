@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.10">
+  <library name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

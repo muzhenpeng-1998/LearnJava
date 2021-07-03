@@ -1,13 +1,13 @@
 <component name="libraryTable">
-  <library name="Maven: org.mockito:mockito-core:3.3.3">
+  <library name="Maven: org.springframework.boot:spring-boot:2.1.17.RELEASE">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.17.RELEASE/spring-boot-2.1.17.RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.17.RELEASE/spring-boot-2.1.17.RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../softwore/mavensotf/org/mockito/mockito-core/3.3.3/mockito-core-3.3.3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.17.RELEASE/spring-boot-2.1.17.RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
